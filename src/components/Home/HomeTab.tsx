@@ -2,7 +2,7 @@ import UserProgress from "../Progress/Progress";
 import { GiTwoCoins } from "react-icons/gi";
 import { useState } from "react";
 const HomeTab = () => {
-    const [balance, setBalance] = useState<string>('1500');
+    const [balance, setBalance] = useState<string>('21000');
     return ( 
         <>
             <div>
@@ -76,21 +76,6 @@ const HomeTab = () => {
                 </div>
                 </div>
             </div>
-             {/* Buttons to increase or decrease balance (for demonstration)
-      <div className="absolute bottom-10 space-x-4">
-        <button
-          className="bg-green-500 text-white px-4 py-2 rounded-lg"
-          onClick={() => setBalance((parseFloat(balance) + 500).toString())}
-        >
-          Add $500
-        </button>
-        <button
-          className="bg-red-500 text-white px-4 py-2 rounded-lg"
-          onClick={() => setBalance((parseFloat(balance) - 500).toString())}
-        >
-          Subtract $500
-        </button>
-      </div> */}
     </div>  
         </>
      );

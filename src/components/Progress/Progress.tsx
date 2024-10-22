@@ -1,45 +1,23 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
+import useUserProgress from '../../hooks/useUserProgress'; // Adjust the import path as needed
 import UserDetails from '../User/User';
+
 // Define an interface for props
 interface UserProgressProps {
     balance: string; // balance will be passed as a string
 }
 
 const UserProgress: React.FC<UserProgressProps> = ({ balance }) => {
-    const [level, setLevel] = useState<number>(0); // Default level is 0
-    const [progress, setProgress] = useState<number>(0); // Initial progress is 0%
-
-    const maxLevel = 10;
-    const levelThreshold = 10000; // $10,000 per level
-
-    // Convert balance to a number for calculations
-    const numericBalance = parseFloat(balance) || 0;
-
-
-    // Calculate user's level and progress based on balance
-    useEffect(() => {
-        // Calculate level based on balance
-        const calculatedLevel = Math.min(Math.floor(numericBalance / levelThreshold) + 1, maxLevel);
-        setLevel(calculatedLevel);
-
-        // Calculate progress for current level
-        const currentLevelBalance = numericBalance % levelThreshold;
-        const calculatedProgress = Math.min((currentLevelBalance / levelThreshold) * 100, 100);
-        setProgress(calculatedProgress);
-    }, [numericBalance]);
-
-      const formatBalance = new Intl.NumberFormat('en-US', {
-    style: 'decimal',
-    minimumFractionDigits: 2,
-    maximumFractionDigits: 2,
-  }).format(parseFloat(balance));
+    const { level, progress, formatBalance } = useUserProgress(balance);
 
     return (
-        <div className="mx-auto rounded-lg shadow-md">
+        <>
+                   <div className="mx-auto rounded-lg shadow-md">
             <div className='space-y-1'>
                 <UserDetails
                     username='bobby mighty'
                     roachimg="https://harlequin-top-puma-655.mypinata.cloud/ipfs/QmTkB92NCATFB1aQHbuiadwigDb9v8rA94tmhXwM9Uj5in"
+                    imgStyle='bg-gradient-to-l from-black via-yellow-900 to-black to-100% '
                 />
                 <div className='flex items-center space-x-3'>
                 <div className="w-[65%] bg-gray-300 rounded-full h-4">
@@ -69,8 +47,9 @@ const UserProgress: React.FC<UserProgressProps> = ({ balance }) => {
             </div>
 
         </div>
+
+        </>
     );
 };
 
 export default UserProgress;
-
