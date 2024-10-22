@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.scrollbar-hide{
+  &::-webkit-scrollbar {
+    display: none;
+  }
+    /* Hide scrollbar for IE and Edge */
+    & {
+      -ms-overflow-style: none; /* Internet Explorer and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+}
+
+/* styles.css */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.bg-gradient-animation {
+  background: linear-gradient(270deg, #F0B211, #754305, #F0B211);
+  background-size: 400% 400%;
+  animation: gradientAnimation 10s ease infinite;
+}
+
+  
