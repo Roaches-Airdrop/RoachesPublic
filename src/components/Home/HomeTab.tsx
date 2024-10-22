@@ -2,7 +2,7 @@ import UserProgress from "../Progress/Progress";
 import { GiTwoCoins } from "react-icons/gi";
 import { useState } from "react";
 const HomeTab = () => {
-    const [balance, setBalance] = useState<string>('21000');
+    const [balance] = useState<string>('21000');
     return ( 
         <>
             <div>

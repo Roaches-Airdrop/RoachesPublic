@@ -4,7 +4,7 @@ import { GiUpgrade } from "react-icons/gi";
 import { useState } from "react";
 
 const UpgradeTab = () => {
-    const [balance, setBalance] = useState<string>('21000');
+    const [balance] = useState<string>('21000');
     const { formatBalance, level } = useUserProgress(balance)
     return (
         <>
