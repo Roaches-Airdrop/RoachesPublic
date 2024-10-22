@@ -29,7 +29,7 @@ const UserProgress: React.FC<UserProgressProps> = ({ balance }) => {
                 </div>
                 <p className='text-white font-roachfont1 font-medium'>{level}</p>
                 </div>
-                <p className='text-white font-roachfont2 text-[16px]'>Level</p>
+                <p className='text-white font-roachfont2 text-[14px]'>Level</p>
 
             </div>
 
@@ -37,12 +37,12 @@ const UserProgress: React.FC<UserProgressProps> = ({ balance }) => {
 
             <div className='flex items-center justify-center space-x-6 my-6'>
                 <div className="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg max-w-md p-4">
-                   <h2 className="uppercase font-roachfont2 text-[20px] text-white font-medium">balance</h2>
-                   <p className="font-roachfont1 text-[18px] text-white font-medium">{formatBalance}<span className='text-roachgold'>{"ROACH"}</span></p> 
+                   <h2 className="uppercase font-roachfont2 text-[18px] text-white font-medium">balance</h2>
+                   <p className="font-roachfont1 text-[16px] text-white font-medium">{formatBalance}<span className='text-roachgold'>{"ROACH"}</span></p> 
                 </div>
                 <div className="bg-white bg-opacity-20 backdrop-blur-md rounded-lg shadow-lg max-w-md p-4">
-                   <h2 className="uppercase font-roachfont2 text-[20px] text-white font-medium">rank</h2> 
-                   <p className="font-roachfont1 text-[18px] text-white font-medium">#5.9</p>
+                   <h2 className="uppercase font-roachfont2 text-[18px] text-white font-medium">rank</h2> 
+                   <p className="font-roachfont1 text-[16px] text-white font-medium">#5.9</p>
                 </div>
             </div>
 

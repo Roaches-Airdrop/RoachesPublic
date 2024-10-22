@@ -12,7 +12,7 @@ const UserDetails: React.FC<UserDetailsProps> = ({username, roachimg, imgStyle})
                 <div className={`inline-block p-[2px] rounded-full ${imgStyle}`}>
                 <img src={roachimg} className={`h-[60px] w-[60px]`}/>
                 </div>
-                <p className="font-roachfont1 text-white capitalize font-medium text-[18px]">{username}</p>
+                <p className="font-roachfont1 text-white capitalize font-medium text-[16px]">{username}</p>
             </div>
         </>
      );

@@ -18,19 +18,19 @@ const TabBar = () => {
                 selectedTab === "Earn" ? "bg-[#ffffff25] py-[6px] px-6 shadow-lg rounded-[10px]" : ""
             }`}>
             <BsCashCoin  className="text-white text-[22px]"/>
-                <p className={`text-center font-roachfont1 text-white text-[15px]`}>Earn</p>
+                <p className={`text-center font-roachfont1 text-white text-[12px]`}>Earn</p>
             </div>
             <div onClick={() => setSelectedTab("FrensRoaches")} className={`flex flex-col justify-center items-center cursor-pointer ${
                  selectedTab === "FrensRoaches" ? "bg-[#ffffff25] py-[6px] px-6 shadow-lg rounded-[10px]" : ""
             }`}>
             <SiCockroachlabs  className="text-white text-[22px]"/>
-                    <p className={`text-center font-roachfont1 text-white text-[15px]`}>Roaches</p>
+                    <p className={`text-center font-roachfont1 text-white text-[12px]`}>Roaches</p>
             </div>
             <div onClick={() => setSelectedTab("Upgrade")} className={`flex flex-col justify-center items-center cursor-pointer ${
                  selectedTab === "Upgrade" ? "bg-[#ffffff25] py-[6px] px-6 shadow-lg rounded-[10px]" : ""
             }`}>
             <GrUpgrade className="text-white text-[22px]"/>
-                    <p className={`text-center font-roachfont1 text-white text-[15px]`}>Upgrade</p>
+                    <p className={`text-center font-roachfont1 text-white text-[12px]`}>Upgrade</p>
             </div>
             </div>
         </div>
