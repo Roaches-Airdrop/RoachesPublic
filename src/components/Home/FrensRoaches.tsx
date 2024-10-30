@@ -5,7 +5,6 @@ const FrensRoachesTab = () => {
         <>
             <div>
                 <UserDetails
-                    username="bobby mighty"
                     imgStyle="bg-transparent h-0 w-0"
                 />
                 <div className="bg-gray-500 bg-opacity-10 backdrop-blur-md space-y-6 my-6 px-4 py-7 rounded-lg">

@@ -15,7 +15,6 @@ const UserProgress: React.FC<UserProgressProps> = ({ balance }) => {
                    <div className="mx-auto rounded-lg shadow-md">
             <div className='space-y-1'>
                 <UserDetails
-                   
                     roachimg="https://harlequin-top-puma-655.mypinata.cloud/ipfs/QmTkB92NCATFB1aQHbuiadwigDb9v8rA94tmhXwM9Uj5in"
                     imgStyle='bg-gradient-to-l from-black via-yellow-900 to-black to-100% '
                 />
