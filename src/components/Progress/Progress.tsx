@@ -15,21 +15,21 @@ const UserProgress: React.FC<UserProgressProps> = ({ balance }) => {
                    <div className="mx-auto rounded-lg shadow-md">
             <div className='space-y-1'>
                 <UserDetails
-                    username='bobby mighty'
+                   
                     roachimg="https://harlequin-top-puma-655.mypinata.cloud/ipfs/QmTkB92NCATFB1aQHbuiadwigDb9v8rA94tmhXwM9Uj5in"
                     imgStyle='bg-gradient-to-l from-black via-yellow-900 to-black to-100% '
                 />
                 <div className='flex items-center space-x-3'>
-                <div className="w-[65%] bg-gray-300 rounded-full h-4">
+                <div className="w-[65%] bg-gray-300 rounded-full h-1">
                     <div
-                        className="bg-roachgold h-4 rounded-[10px] transition-all duration-500"
+                        className="bg-roachgold h-1 rounded-[10px] transition-all duration-500"
                         style={{ width: `${progress}%` }}
                     ></div>
                    
                 </div>
                 <p className='text-white font-roachfont1 font-medium'>{level}</p>
                 </div>
-                <p className='text-white font-roachfont2 text-[14px]'>Level</p>
+                <p className='text-white font-roachfont2 text-[11px]'>Level</p>
 
             </div>
 
