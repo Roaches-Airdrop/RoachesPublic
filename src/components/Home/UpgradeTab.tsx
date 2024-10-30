@@ -11,7 +11,6 @@ const UpgradeTab = () => {
             <div>
                 <div className="flex items-center justify-between space-x-4">
                     <UserDetails
-                        username="bobby mighty"
                         imgStyle="bg-transparent h-0 w-0"
                     />
                     <button className="bg-gradient-to-r from-yellow-400 via-amber-600 to-yellow-400 text-center cursor-pointer font-roachfont1 capitalize text-[16px] text-white font-medium py-3 w-[50%] rounded-lg">connect wallet</button>
