@@ -27,11 +27,11 @@ const TaskComponent = () => {
                             <FaXTwitter className="text-[24px]" />
                         </div>
                         <div>
-                            <p className="text-white font-roachfont1 text-[16px]">Follow channel</p>
-                            <p className="text-gray-500 font-roachfont1 text-[14px]">+ 1,000 ROACH</p>
+                            <p className="text-white font-roachfont1 text-[14px]">Follow channel</p>
+                            <p className="text-gray-500 font-roachfont1 text-[12px]">+ 1,000 ROACH</p>
                         </div>
                     </div>
-                    <button className="font-roachfont1 text-[16px] bg-white rounded-lg fobt-[700] p-1">Start</button>
+                    <button className="font-roachfont1 text-[12px] bg-white rounded-full font-[700] px-4 py-2">Start</button>
 
                 </div>
 
@@ -41,11 +41,11 @@ const TaskComponent = () => {
                             <FaYoutube className="text-[24px] text-white" />
                         </div>
                         <div>
-                            <p className="text-white font-roachfont1 text-[16px]">Subscribe</p>
-                            <p className="text-gray-500 font-roachfont1 text-[14px]">+ 1,000 ROACH</p>
+                            <p className="text-white font-roachfont1 text-[14px]">Subscribe</p>
+                            <p className="text-gray-500 font-roachfont1 text-[12px]">+ 1,000 ROACH</p>
                         </div>
                     </div>
-                    <button className="font-roachfont1 text-[16px] bg-roachgold rounded-lg fobt-[700] p-1">Claim</button>
+                    <button className="font-roachfont1 text-[12px] bg-roachgold rounded-full font-[700] px-4 py-2">Claim</button>
 
                 </div>
 
@@ -55,11 +55,11 @@ const TaskComponent = () => {
                             <BiLogoTelegram className="text-[24px] text-white" />
                         </div>
                         <div>
-                            <p className="text-white font-roachfont1 text-[16px]">Follow channel</p>
-                            <p className="text-gray-500 font-roachfont1 text-[14px]">+ 1,000 ROACH</p>
+                            <p className="text-white font-roachfont1 text-[14px]">Follow channel</p>
+                            <p className="text-gray-500 font-roachfont1 text-[12px]">+ 1,000 ROACH</p>
                         </div>
                     </div>
-                    <button className="font-roachfont1 text-[16px] bg-white rounded-lg fobt-[700] p-1">Start</button>
+                    <button className="font-roachfont1 text-[12px] bg-white rounded-full font-[700] px-4 py-2">Start</button>
 
                 </div>
 
@@ -69,11 +69,11 @@ const TaskComponent = () => {
                             <HiMiniUserGroup className="text-[24px] text-white" />
                         </div>
                         <div>
-                            <p className="text-white font-roachfont1 text-[16px]">Invite Friends</p>
-                            <p className="text-gray-500 font-roachfont1 text-[14px]">+ 1,000 ROACH</p>
+                            <p className="text-white font-roachfont1 text-[14px]">Invite Friends</p>
+                            <p className="text-gray-500 font-roachfont1 text-[12px]">+ 1,000 ROACH</p>
                         </div>
                     </div>
-                    <button className="font-roachfont1 text-[16px] bg-roachgold rounded-lg fobt-[700] p-1">Claim</button>
+                    <button className="font-roachfont1 text-[12px] bg-roachgold rounded-full font-[700] py-2 px-4 text-center">Claim</button>
 
                 </div>
 
@@ -83,11 +83,11 @@ const TaskComponent = () => {
                             <FaWallet className="text-[24px] text-white" />
                         </div>
                         <div>
-                            <p className="text-white font-roachfont1 text-[16px]">Connect Wallet</p>
-                            <p className="text-gray-500 font-roachfont1 text-[14px]">+ 1,000 ROACH</p>
+                            <p className="text-white font-roachfont1 text-[14px]">Connect Wallet</p>
+                            <p className="text-gray-500 font-roachfont1 text-[12px]">+ 1,000 ROACH</p>
                         </div>
                     </div>
-                    <button className="font-roachfont1 text-[16px] bg-white rounded-lg fobt-[700] p-1">Start</button>
+                    <button className="font-roachfont1 text-[12px] bg-white rounded-full font-[700] text-center py-2 px-4">Start</button>
 
                 </div>
 

@@ -1,5 +1,5 @@
 import UserDetails from "../User/User";
-import RoachProfile from "../../assets/roaches/roachprofile.png";
+
 import RoachCoin from "../../assets/roaches/roachsplash2.png"
 import useBalance from "../../hooks/useBalance";
 import ProgressBar from "../ProgressBar/ProgressBar";
@@ -12,11 +12,9 @@ const NewHome = () => {
         <>
         <div>
             {/* Username and Level/Progress */}
-            <div className="flex justify-between items-center">
+            <div className="flex justify-between items-center space-x-10">
                 <div className="flex-1">
                 <UserDetails
-            roachimg={RoachProfile}
-            imgStyle="bg-gradient-to-l from-black via-yellow-900 to-black to-100%"
             />
                 </div>
                 <div className="flex-1 space-y-1">
