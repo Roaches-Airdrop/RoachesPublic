@@ -4,7 +4,7 @@ import { SiCockroachlabs } from "react-icons/si";
 import { GrUpgrade } from "react-icons/gr";
 import FrensRoachesTab from "../Home/FrensRoaches";
 import UpgradeTab from "../Home/UpgradeTab";
-import HomeTab from "../Home/HomeTab";
+import NewHome from "../Home/NewHome";
 
 const TabBar = () => {
     const [selectedTab, setSelectedTab] = useState<string>('Earn')
@@ -36,7 +36,7 @@ const TabBar = () => {
         </div>
         </div>
 
-        {selectedTab === "Earn" && <HomeTab/>}
+        {selectedTab === "Earn" && <NewHome/>}
         {selectedTab === "FrensRoaches" && <FrensRoachesTab/>}
         {selectedTab === "Upgrade" && <UpgradeTab/>}
         </>

@@ -12,11 +12,11 @@ interface UserData {
 }
 
 interface UserDetailsProps {
- 
+    contStyle?: string
     roachimg?: any
     imgStyle?: string
 }
-const UserDetails: React.FC<UserDetailsProps> = ({ roachimg, imgStyle}) => {
+const UserDetails: React.FC<UserDetailsProps> = ({contStyle, roachimg, imgStyle}) => {
 
     const [userData, setUserData] = useState<UserData | null>(null);
     
@@ -26,14 +26,13 @@ const UserDetails: React.FC<UserDetailsProps> = ({ roachimg, imgStyle}) => {
         }
     }, [])
 
-
     return ( 
         <>
-            <div className="flex items-center space-x-3">
+            <div className={`flex items-center space-x-2 ${contStyle}`}>
                 <div className={`inline-block p-[2px] rounded-full ${imgStyle}`}>
-                <img src={roachimg} className={`h-[60px] w-[60px]`}/>
+                <img src={roachimg} className={`h-[32px] w-[32px]`}/>
                 </div>
-                <p className="font-roachfont1 text-white capitalize font-medium text-[10px]">{userData?.username}</p>
+                <p className="font-roachfont1 text-white capitalize font-medium text-[12px]">{userData?.username}</p>
             </div>
         </>
      );

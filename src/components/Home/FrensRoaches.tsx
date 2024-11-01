@@ -1,6 +1,8 @@
 import UserDetails from "../User/User";
 import { GiTwoCoins } from "react-icons/gi";
 const FrensRoachesTab = () => {
+
+
     return (
         <>
             <div>
@@ -26,7 +28,7 @@ const FrensRoachesTab = () => {
                     <div className="space-y-4 px-4">
                         <h2 className="capitalize font-roachfont2 text-white text-[18px] font-medium">friends</h2>
                         <div className="space-y-6">
-                            <div className="flex items-center justify-between">
+                            <div className="flex items-center justify-between border-b border-gray-400 pb-4">
                                 <div>
                                     <h3 className="capitalize font-roachfont1 text-[16px] font-medium text-white">Perry cyber</h3>
                                 </div>
@@ -35,7 +37,7 @@ const FrensRoachesTab = () => {
                                     <GiTwoCoins className="text-roachgold text-[22px]" />
                                 </div>
                             </div>
-                            <div className="flex items-center justify-between">
+                            <div className="flex items-center justify-between border-b border-gray-400 pb-4">
                                 <div>
                                     <h3 className="capitalize font-roachfont1 text-[16px] font-medium text-white">P tech</h3>
                                 </div>
@@ -44,7 +46,7 @@ const FrensRoachesTab = () => {
                                     <GiTwoCoins className="text-roachgold text-[22px]" />
                                 </div>
                             </div>
-                            <div className="flex items-center justify-between">
+                            <div className="flex items-center justify-between border-b border-gray-400 pb-4">
                                 <div>
                                     <h3 className="capitalize font-roachfont1 text-[16px] font-medium text-white">I concepts</h3>
                                 </div>
