@@ -26,7 +26,7 @@ const UserDetails: React.FC<UserDetailsProps> = ({contStyle}) => {
 
     return ( 
         <>
-            <div className={`flex items-center space-x-2 bg-white bg-opacity-15 backdrop-blur-md shadow-lg justify-center p-3 rounded-[10px] ${contStyle}`}>
+            <div className={`flex items-center space-x-2 bg-white bg-opacity-10 backdrop-blur-md shadow-lg justify-center p-3 rounded-[10px] ${contStyle}`}>
                 <p className="font-roachfont1 text-white capitalize font-medium text-center text-[12px] border-x border-gray-500 px-4 ">{`@${userData?.username}`}</p>
             </div>
         </>
