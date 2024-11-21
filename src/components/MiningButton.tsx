@@ -88,7 +88,7 @@ const MiningButton: React.FC<MiningButtonProps> = ({ onMine, onClaim }) => {
               <span>{pack.price}</span>
             </div>
             <button className="multiply-btn bg-blue-500 text-white py-1 px-4 rounded-full">
-              Multiply it twice
+              Multiply
             </button>
           </div>
         ))}
