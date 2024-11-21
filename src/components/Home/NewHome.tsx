@@ -1,13 +1,18 @@
 import UserDetails from "../User/User";
-
 import RoachCoin from "../../assets/roaches/roachsplash2.png"
 import useBalance from "../../hooks/useBalance";
 import ProgressBar from "../ProgressBar/ProgressBar";
 import { GoChecklist } from "react-icons/go";
 import { FaWallet } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
+
 const NewHome = () => {
     const { level, progress, formattedBalance } = useBalance();
+    const navigate = useNavigate();
+
+    const handleNavigation = () => {
+        navigate('/upgrade')
+    }
     return ( 
         <>
         <div>
@@ -15,6 +20,7 @@ const NewHome = () => {
             <div className="flex justify-between items-center space-x-10">
                 <div className="flex-1">
                 <UserDetails
+                onPress={handleNavigation}
             />
                 </div>
                 <div className="flex-1 space-y-1">

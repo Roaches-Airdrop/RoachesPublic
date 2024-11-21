@@ -1,12 +1,18 @@
 import UserDetails from "../User/User";
 import useBalance from "../../hooks/useBalance";
 import { GiUpgrade } from "react-icons/gi";
+import { IoArrowBack } from "react-icons/io5";
+import { useNavigate } from "react-router-dom";
 
 const UpgradeTab = () => {
     const { level, formattedBalance } = useBalance();
+    const navigate = useNavigate();
+    const goBack = () => {
+        navigate(-1);
+    };
     return (
         <>
-            <div>
+            <div className="h-screen overflow-auto scrollbar-hide bg-gradient-to-b from-black via-gray-900 to-gray-800 to-100% px-6 pt-6 pb-24">
                 <div className="flex items-center justify-between ">
                     <UserDetails
                     />
@@ -80,7 +86,16 @@ const UpgradeTab = () => {
                         <p className="font-roachfont2 text-[18px] text-white font-normal">Coming Soon...</p>
                     </div>
                 </div>
-
+                            {/* Back TabBar */}
+            <div className="flex items-center justify-center ">
+                <div className="fixed bottom-0 w-full z-[1000]">
+                    <div className="flex items-center justify-center bg-white bg-opacity-10 backdrop-blur-md rounded-tr-[50px] rounded-tl-[50px] py-4 px-6 shadow-lg">
+                        <div className="flex justify-center items-center cursor-pointer bg-[#ffffff25] py-[6px] px-6 shadow-lg rounded-[10px]" onClick={goBack}>
+                            <IoArrowBack className="text-white text-[22px]" />
+                        </div>
+                    </div>
+                </div>
+            </div>
             </div>
         </>
     );

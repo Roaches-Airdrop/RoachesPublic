@@ -15,6 +15,9 @@ export default {
         roachfont1: ["Kode Mono", "monospace"],
         roachfont2: ["Unbounded", "serif"]
       },
+      screens: {
+        "xsm": "480px"
+      }
     },
   },
   plugins: [],

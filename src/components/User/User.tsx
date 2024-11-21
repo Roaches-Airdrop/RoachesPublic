@@ -8,13 +8,14 @@ interface UserData {
     last_name?: string;
     username?: string;
     language_code: string;
-    is_premuim?: boolean
+    is_premuim?: boolean;
 }
 
 interface UserDetailsProps {
-    contStyle?: string
+    contStyle?: string;
+    onPress?: any;
 }
-const UserDetails: React.FC<UserDetailsProps> = ({contStyle}) => {
+const UserDetails: React.FC<UserDetailsProps> = ({contStyle, onPress}) => {
 
     const [userData, setUserData] = useState<UserData | null>(null);
     
@@ -26,7 +27,7 @@ const UserDetails: React.FC<UserDetailsProps> = ({contStyle}) => {
 
     return ( 
         <>
-            <div className={`flex items-center space-x-2 bg-white bg-opacity-10 backdrop-blur-md shadow-lg justify-center p-3 rounded-[10px] ${contStyle}`}>
+            <div className={`flex items-center cursor-pointer space-x-2 bg-white bg-opacity-10 backdrop-blur-md shadow-lg justify-center p-3 rounded-[10px] ${contStyle}`} onClick={onPress}>
                 <p className="font-roachfont1 text-white capitalize font-medium text-center text-[12px] border-x border-gray-500 px-4 ">{`@${userData?.username}`}</p>
             </div>
         </>
