@@ -1,6 +1,5 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import CircleLoader from "../components/Loader/Circular";
 import TopLoader from "../components/Loader/Linear";
 
 const Onboarding = () => {
@@ -17,9 +16,6 @@ useEffect(() => {
         <>
        <div className="bg-[url('https://harlequin-top-puma-655.mypinata.cloud/ipfs/QmbKrMoRajBsDG8CkRjxmtXtwSRieLazWDpVjfpwQ4f1Rh')] h-[100vh] bg-center bg-cover">
         <TopLoader />
-        <div className="flex justify-center items-center">
-            <CircleLoader />
-        </div>
         <div className="fixed bottom-0 w-full">
             <div className="h-[30vh] bg-gradient-to-l from-[#0000003d] via-[#78360f3d]  to-[#0000003d] to-100%">
 
