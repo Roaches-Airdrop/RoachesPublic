@@ -1,10 +1,14 @@
 import { useState } from "react";
-import { BsCashCoin } from "react-icons/bs";
+import Coin from "../../assets/others/dollar.png";
+import { GiMining } from "react-icons/gi";
+import { MdOutlineLeaderboard } from "react-icons/md";
 import { SiCockroachlabs } from "react-icons/si";
 import { GrUpgrade } from "react-icons/gr";
 import FrensRoachesTab from "../Home/FrensRoaches";
 import UpgradeTab from "../Home/UpgradeTab";
-import HomeTab from "../Home/HomeTab";
+import NewHome from "../Home/NewHome";
+import Mine from "../Home/Mine";
+import Ranks from "../Home/Ranks";
 
 const TabBar = () => {
     const [selectedTab, setSelectedTab] = useState<string>('Earn')
@@ -14,30 +18,44 @@ const TabBar = () => {
         <div className="flex items-center justify-center ">
         <div className="fixed bottom-0 w-full z-[1000]">
             <div className="flex items-center justify-between bg-white bg-opacity-10 backdrop-blur-md rounded-tr-[50px] rounded-tl-[50px] py-4 px-6 shadow-lg">
-            <div onClick={() => setSelectedTab("Earn")} className={`flex flex-col justify-center items-center cursor-pointer ${
+            <div onClick={() => setSelectedTab("Earn")} className={`flex flex-col  py-[6px] px-6  justify-center items-center cursor-pointer ${
                 selectedTab === "Earn" ? "bg-[#ffffff25] py-[6px] px-6 shadow-lg rounded-[10px]" : ""
             }`}>
-            <BsCashCoin  className="text-white text-[22px]"/>
-                <p className={`text-center font-roachfont1 text-white text-[15px]`}>Earn</p>
+            <img src={Coin} alt="coin" className="h-6"/>
+                <p className={`text-center font-roachfont1 text-white text-[12px]`}>Earn</p>
             </div>
-            <div onClick={() => setSelectedTab("FrensRoaches")} className={`flex flex-col justify-center items-center cursor-pointer ${
+            <div onClick={() => setSelectedTab("Mine")} className={`flex flex-col  py-[6px] px-6  justify-center items-center cursor-pointer ${
+                selectedTab === "Mine" ? "bg-[#ffffff25] py-[6px] px-6 shadow-lg rounded-[10px]" : ""
+            }`}>
+            <GiMining  className="text-white text-[22px]"/>
+                <p className={`text-center font-roachfont1 text-white text-[12px]`}>Mine</p>
+            </div>
+            <div onClick={() => setSelectedTab("FrensRoaches")} className={`flex  py-[6px] px-6  flex-col justify-center items-center cursor-pointer ${
                  selectedTab === "FrensRoaches" ? "bg-[#ffffff25] py-[6px] px-6 shadow-lg rounded-[10px]" : ""
             }`}>
             <SiCockroachlabs  className="text-white text-[22px]"/>
-                    <p className={`text-center font-roachfont1 text-white text-[15px]`}>Roaches</p>
+                    <p className={`text-center font-roachfont1 text-white text-[12px]`}>Roaches</p>
             </div>
-            <div onClick={() => setSelectedTab("Upgrade")} className={`flex flex-col justify-center items-center cursor-pointer ${
+            <div onClick={() => setSelectedTab("Ranks")} className={`flex  py-[6px] px-6  flex-col justify-center items-center cursor-pointer ${
+                 selectedTab === "Ranks" ? "bg-[#ffffff25] py-[6px] px-6 shadow-lg rounded-[10px]" : ""
+            }`}>
+            <MdOutlineLeaderboard  className="text-white text-[22px]"/>
+                    <p className={`text-center font-roachfont1 text-white text-[12px]`}>Ranks</p>
+            </div>
+            <div onClick={() => setSelectedTab("Upgrade")} className={`flex flex-col  py-[6px] px-6  justify-center items-center cursor-pointer ${
                  selectedTab === "Upgrade" ? "bg-[#ffffff25] py-[6px] px-6 shadow-lg rounded-[10px]" : ""
             }`}>
             <GrUpgrade className="text-white text-[22px]"/>
-                    <p className={`text-center font-roachfont1 text-white text-[15px]`}>Upgrade</p>
+                    <p className={`text-center font-roachfont1 text-white text-[12px]`}>Upgrade</p>
             </div>
             </div>
         </div>
         </div>
 
-        {selectedTab === "Earn" && <HomeTab/>}
+        {selectedTab === "Earn" && <NewHome/>}
+        {selectedTab === "Mine" && <Mine/>}
         {selectedTab === "FrensRoaches" && <FrensRoachesTab/>}
+        {selectedTab === "Ranks" && <Ranks/>}
         {selectedTab === "Upgrade" && <UpgradeTab/>}
         </>
      );

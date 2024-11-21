@@ -1,26 +1,22 @@
 import UserDetails from "../User/User";
-import useUserProgress from '../../hooks/useUserProgress';
+import useBalance from "../../hooks/useBalance";
 import { GiUpgrade } from "react-icons/gi";
-import { useState } from "react";
 
 const UpgradeTab = () => {
-    const [balance, setBalance] = useState<string>('21000');
-    const { formatBalance, level } = useUserProgress(balance)
+    const { level, formattedBalance } = useBalance();
     return (
         <>
             <div>
-                <div className="flex items-center justify-between">
+                <div className="flex items-center justify-between ">
                     <UserDetails
-                        username="bobby mighty"
-                        imgStyle="bg-transparent h-0 w-0"
                     />
-                    <button className="bg-gradient-to-r from-yellow-400 via-amber-600 to-yellow-400 text-center cursor-pointer font-roachfont1 capitalize text-[18px] text-white font-medium py-3 w-[50%] rounded-lg">connect wallet</button>
+                    <button className="bg-gradient-to-r from-yellow-400 via-amber-600 to-yellow-400 text-center cursor-pointer font-roachfont1 capitalize text-[11px] text-white font-medium py-3 px-2 rounded-lg">connect wallet</button>
                 </div>
                 <div className="">
                     <div className="flex justify-center items-center bg-gray-500 bg-opacity-10 backdrop-blur-md space-y-6 my-6 px-4 py-7 rounded-lg">
                         <div>
                             <h3 className="font-roachfont2 text-white text-[20px] font-medium text-center">Balance</h3>
-                            <p className="font-roachfont1 text-[18px] text-white font-medium text-center">{formatBalance}<span className='text-roachgold'>{"ROACH"}</span></p>
+                            <p className="font-roachfont1 text-[18px] text-white font-medium text-center">{formattedBalance}<span className='text-roachgold'>{"ROACH"}</span></p>
                             <h3 className="font-roachfont2 text-white text-[20px] font-medium text-center">Level {level}</h3>
                         </div>
 
