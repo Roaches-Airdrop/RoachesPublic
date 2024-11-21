@@ -1,0 +1,201 @@
+/* Container Styles */
+.mining-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+/* Counter Styling */
+.counter {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #f4d03f;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Claim Button */
+.claim-button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background: linear-gradient(90deg, #27ae60, #2ecc71);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(39, 174, 96, 0.5);
+  transition: all 0.3s ease;
+}
+
+.claim-button:hover {
+  background: linear-gradient(90deg, #2ecc71, #27ae60);
+  box-shadow: 0 0 15px rgba(39, 174, 96, 0.8);
+}
+
+/* Packs Grid */
+.packs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.pack-card {
+  background: #2c2c2c;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  color: white;
+  position: relative;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.pack-label {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px 10px;
+  font-size: 12px;
+  font-weight: bold;
+  border-radius: 5px;
+  text-transform: uppercase;
+  color: white;
+}
+
+.pack-label.trending {
+  background: #27ae60;
+}
+
+.pack-label.hot {
+  background: #e67e22;
+}
+
+.pack-quantity {
+  font-size: 24px;
+  font-weight: bold;
+  background: linear-gradient(90deg, #00c6ff, #0072ff); /* Glowing gradient */
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 8px rgba(0, 198, 255, 0.8), 0 0 15px rgba(0, 114, 255, 0.8);
+  margin-bottom: 10px;
+  text-transform: uppercase;
+}
+
+.pack-bonus {
+  font-size: 12px;
+  margin: 5px 0;
+  color: #f1c40f;
+}
+
+.pack-price {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.pack-price .star {
+  color: #f4d03f;
+  margin-right: 5px;
+}
+/* Center Container */
+.mining-button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  /* Countdown Timer Inside Button */
+  .countdown-timer {
+    display: block;
+    font-size: 12px;
+    margin-top: 5px;
+    color: #fff;
+    font-weight: bold;
+  }
+  
+  /* Counter Styling */
+  .counter {
+    margin-top: 15px;
+    font-size: 18px;
+    color: #f4d03f;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  /* Claim Button */
+  .claim-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #27ae60, #2ecc71);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(39, 174, 96, 0.5);
+    transition: all 0.3s ease;
+  }
+  
+  .claim-button:hover {
+    background: linear-gradient(90deg, #2ecc71, #27ae60);
+    box-shadow: 0 0 15px rgba(39, 174, 96, 0.8);
+  }
+  
+  /* Mining Button */
+  .mining-button {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: none;
+    background: linear-gradient(90deg, #f39c12, #f1c40f);
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 20px rgba(243, 156, 18, 0.5);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .mining-button:hover {
+    box-shadow: 0 0 30px rgba(243, 156, 18, 0.8);
+  }
+  
+  /* Thunder Animation (Optional) */
+  .thunder-animation {
+    position: absolute;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    background: rgba(243, 156, 18, 0.3);
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1.5);
+      opacity: 0;
+    }
+  }
+  
+  /* Disabled Button */
+  .mining-button.disabled {
+    background: #bdc3c7;
+    color: #7f8c8d;
+    cursor: not-allowed;
+    box-shadow: none;
+  }
+  
