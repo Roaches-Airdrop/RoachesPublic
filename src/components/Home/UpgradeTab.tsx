@@ -1,10 +1,14 @@
 import UserDetails from "../User/User";
+import {useState} from "react"
+
 import useBalance from "../../hooks/useBalance";
-import { GiUpgrade } from "react-icons/gi";
+import SlideUpModal from "../SlideUpModal"; 
+// import { GiUpgrade } from "react-icons/gi";
 import { IoArrowBack } from "react-icons/io5";
 import { useNavigate } from "react-router-dom";
 
 const UpgradeTab = () => {
+    const [isModalOpen, setModalOpen] = useState<boolean>(false);
     const { level, formattedBalance } = useBalance();
     const navigate = useNavigate();
     const goBack = () => {
@@ -33,10 +37,10 @@ const UpgradeTab = () => {
                 <div className="bg-gradient-animation flex items-center justify-around py-3 rounded-md">
                     <img src="https://harlequin-top-puma-655.mypinata.cloud/ipfs/QmczUiz4qjLv7eBDENwBB7pHTUXx4sdkfW36U83Si3uGyN" alt="Roach" className="h-[12vh]" />
                     <div className="flex flex-col justify-center items-center space-y-2">
-                        <h3 className="font-roachfont2 text-white font-thin text-[11px]">Become a pro user and earn more.</h3>
-                        <span className="flex items-center justify-center space-x-2 bg-white py-2 w-[60%] rounded-lg">
-                            <p className="text-center cursor-pointer font-roachfont1 capitalize text-[14px] text-black font-bold">Go Pro</p>
-                            <GiUpgrade />
+                        <h3 className="font-roachfont2 text-white font-thin text-[10px]">increase your mining power to earn more.</h3>
+                        <span className="flex items-center justify-center space-x-2 bg-black py-2 w-[60%] rounded-lg" onClick={() => setModalOpen(true)}>
+                            <p className="text-center cursor-pointer font-roachfont1 capitalize text-[14px] text-white font-bold" >Increase</p>
+                            <img width={10} height={10} src="https://harlequin-legal-ox-300.mypinata.cloud/ipfs/QmNz3LhJbRCEuANaLWwCbFFYa7sgV5ESj5m79hPVqQnrBT" alt="" />
                         </span>
                     </div>
                 </div>
@@ -97,6 +101,7 @@ const UpgradeTab = () => {
                 </div>
             </div>
             </div>
+            <SlideUpModal isOpen={isModalOpen} onClose={() => setModalOpen(false)} />
         </>
     );
 }
