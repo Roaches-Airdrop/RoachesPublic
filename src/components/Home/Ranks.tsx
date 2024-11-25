@@ -93,7 +93,7 @@ const Ranks: React.FC = () => {
             <div className="flex flex-col items-center bg-black bg-opacity-30 rounded-lg shadow-md p-6 w-full max-w-md">
                 <FaUsers className="text-5xl text-yellow-500 mb-4" />
                 <div className="text-3xl font-bold">{totalUsers !== null ? totalUsers : 'Loading...'}</div>
-                <div className="text-gray-300 capitalize text-[22px] text-white font-medium py-3 px-2 font-roachfont1">
+                <div className="text-gray-300 capitalize text-[22px]font-medium py-3 px-2 font-roachfont1">
                     Total Users
                 </div>
             </div>

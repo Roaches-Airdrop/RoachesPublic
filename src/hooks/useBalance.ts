@@ -5,7 +5,7 @@ const calculateLevel = (balance: number) => Math.floor(balance / 1000); // Level
 const calculateProgress = (balance: number) => (balance % 1000) / 10; // Progress as a percentage of the $1000 increment
 
 const useBalance = () => {
-  const [balance, setBalance] = useState<number>(2500); // Default balance set to $500
+  const [balance, setBalance] = useState<number>(25890); // Default balance set to $500
   const [level, setLevel] = useState<number>(calculateLevel(balance));
   const [progress, setProgress] = useState<number>(calculateProgress(balance));
 

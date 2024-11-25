@@ -12,8 +12,9 @@ const App: React.FC = () => {
   };
   return (
     <div>
-      <h1>Telegram Mining App</h1>
+      
       <MiningButton onMine={handleMine}  onClaim={handleClaim}/>
+      
     </div>
   );
 };
